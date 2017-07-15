@@ -7,4 +7,4 @@ RUN npm install && npm run build && npm prune --production
 
 EXPOSE 8080
 
-ENTRYPOINT ["./docker-entrypoint.sh"]
+CMD ["npm", "run", "start", "--"]
